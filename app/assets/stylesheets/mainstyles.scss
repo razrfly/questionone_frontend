@@ -63,6 +63,22 @@ $rgba-complement-4: rgba(  0,109, 13,1);
 
 body {
 	font-family: 'Karla', sans-serif;
+
+	> .container-fluid {
+		padding-left: 0;
+		padding-right: 0;
+
+		> .row-offcanvas {
+			> .col-xs-12 {
+				padding-right: 0;
+			}
+
+			> .sidebar-offcanvas {
+				background: $color-primary-0;
+				height: 100%;
+			}
+		}
+	}
 }
 
 
