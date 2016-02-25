@@ -100,6 +100,12 @@ $rgba-complement-2: rgba( 82,211, 98,1);
 $rgba-complement-3: rgba(  6,158, 24,1);
 $rgba-complement-4: rgba(  0,109, 13,1);
 
+@mixin transition($duration: 0.25s, $ease: ease-out){
+  -webkit-transition: all $duration $ease;
+  -moz-transition: all $duration $ease;
+  -o-transition: all $duration $ease;
+  transition: all $duration $ease;
+}
 
 body {
 	font-family: 'museo_sans300', sans-serif;
@@ -123,6 +129,9 @@ body {
 	}
 }
 
+a {
+	@include transition($duration: 0.25s, $ease: ease-out);
+}
 
 .letter-spaced {
 	letter-spacing: 0.05rem;
