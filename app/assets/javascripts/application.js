@@ -15,4 +15,5 @@
 //= require turbolinks
 //= require bootstrap-sprockets
 //= require creative_link_effects/modernizr.custom
+//= require offcanvas
 //= require_tree .

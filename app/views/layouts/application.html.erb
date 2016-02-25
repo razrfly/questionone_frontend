@@ -14,7 +14,17 @@
   </head>
 
   <body class="<%= controller_name %> <%= action_name %>">
-    <%= render 'layouts/navigation' %>
-    <%= yield %>
+    <div class="container-fluid">
+      <div class="row row-offcanvas row-offcanvas-right">
+        <div class="col-xs-12">
+          <%= render 'layouts/navigation' %>
+          <%= yield %>
+        </div>
+
+        <div class="col-xs-6 sidebar-offcanvas hidden-sm-up">
+          <!-- Rui puts mobile menu here -->
+        </div>
+      </div>
+    </div>
   </body>
 </html>
