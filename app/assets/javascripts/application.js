@@ -13,6 +13,7 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
+//= require tether
 //= require bootstrap-sprockets
 //= require creative_link_effects/modernizr.custom
 //= require offcanvas
