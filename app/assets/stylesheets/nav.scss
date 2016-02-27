@@ -71,33 +71,28 @@ button:focus {
 }
 
 .sidebar-offcanvas {
-	-webkit-box-shadow: -6px 8px 5px 0px rgba( $rgba-primary-4, 0.05 );
-	-moz-box-shadow:    -6px 8px 5px 0px rgba( $rgba-primary-4, 0.05 );
-	box-shadow:         -6px 8px 5px 0px rgba( $rgba-primary-4, 0.05 );
+	border-left: 2px solid rgba($rgba-secondary-1-1, 0.2 ) ;
 	padding: 0px;
 	a:active, a:hover {
 			text-decoration: none;
-			background: #fff;
+			background: rgba( $rgba-secondary-1-1, 0.2 );
 		}
-	span {
-	}
+
 	a, span {
-		color:  rgba( $rgba-primary-4, 0.75 );
+		color:  rgba( $rgba-primary-0, 1 );
+		
 		padding: 10px 2rem;
 		display: block;
 		font-family: 'museo_sans700';
 		border-bottom: 1px solid rgba( $rgba-secondary-1-1, 0.2 );
 		
-		&:first-child {
-			border-top: 1px solid rgba( $rgba-secondary-1-1, 0.2 );
 
-		}
 
 		&:focus {
 			text-decoration: none;
 		}
-
-
+	}
+	span {
 	}
 
 	.mobile-q1 {
@@ -107,6 +102,6 @@ button:focus {
 			margin: 0px;
 		}
 		padding: 11px 2rem;
-		background: rgba( $rgba-primary-4, 0.85 );
+		background: rgba( $rgba-primary-0, 1 );
 	}
 }
