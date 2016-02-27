@@ -131,12 +131,21 @@ body {
 
 a {
 	@include transition($duration: 0.25s, $ease: ease-out);
+    color: $rgba-primary-0;
+    &:active, &:hover {
+        text-decoration: none;
+        color: $rgba-primary-4;
+    }
 }
 
 ul {
     margin: 0px;
     padding: 0px;
     list-style-type: none;
+}
+
+.f-700 {
+    font-family: 'museo_sans700', sans-serif;
 }
 
 .letter-spaced {
@@ -162,5 +171,5 @@ ul {
 
 .container-content {
     padding-left: 0.5073rem;
-    padding-right: 0.5073rem;
+    padding-right: 1.375rem;
 }
