@@ -129,6 +129,10 @@ body {
 	}
 }
 
+hr {
+    border-top: 3px solid $color-primary-0;
+}
+
 a {
 	@include transition($duration: 0.25s, $ease: ease-out);
     color: $rgba-primary-0;
